@@ -60,9 +60,14 @@
       <section id="about" class="section container">
         <h2>About</h2>
         <p>
-          I am currently an MS student in the Department of Statistics at UIUC (2024-2026). My current
-          interests focus on machine learning systems and deep learning, especially efficient inference for
-          large models.
+          I'm working at the intersection of RL training infrastructure and LLM inference optimization.
+        </p>
+        <p>
+          Most recently, I've been working on DAS (Distribution-Aware Speculative Decoding for RL Training),
+          which adapts speculative decoding to the unique distribution shift that arises during on-policy RL
+          rollouts. The work integrates with verl and vLLM, and tackles GPU workload balancing for
+          tree-structured speculation under heterogeneous sequence lengths. I'm currently based in the Bay
+          Area.
         </p>
       </section>
 
@@ -70,31 +75,55 @@
         <h2>Publications</h2>
         <ul class="publication-list">
           <li class="pub-item">
-            <img src="./assets/papers/mlsys2026.jpg" alt="Preview image for MLSys 2026 paper" />
+            <div class="pub-thumb pdf-thumb" aria-hidden="true">PDF</div>
             <div>
-              <strong>Beat the long tail: Distribution-Aware Speculative Decoding for RL Training</strong>
+              <strong>
+                <a href="./assets/papers/mlsys26.pdf" target="_blank" rel="noopener noreferrer">
+                  Beat the long tail: Distribution-Aware Speculative Decoding for RL Training
+                </a>
+              </strong>
               <span>MLSys 2026</span>
+              <span class="pub-links">
+                <a href="./assets/papers/mlsys26.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </span>
             </div>
           </li>
           <li class="pub-item">
-            <img src="./assets/papers/icml2026.jpg" alt="Preview image for ICML 2026 paper" />
+            <div class="pub-thumb pdf-thumb" aria-hidden="true">PDF</div>
             <div>
-              <strong>When RL Meets Adaptive Speculative Training: A Unified Training-Serving System</strong>
+              <strong>
+                <a href="./assets/papers/icml26.pdf" target="_blank" rel="noopener noreferrer">
+                  When RL Meets Adaptive Speculative Training: A Unified Training-Serving System
+                </a>
+              </strong>
               <span>ICML 2026 (Regular)</span>
+              <span class="pub-links">
+                <a href="./assets/papers/icml26.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </span>
             </div>
           </li>
           <li class="pub-item">
-            <img src="./assets/papers/neurips2025.jpg" alt="Preview image for NeurIPS 2025 paper" />
+            <img class="pub-thumb" src="./assets/papers/nips25.jpeg" alt="Preview image for NeurIPS 2025 paper" />
             <div>
               <strong>Scaling Speculative Decoding with Lookahead Reasoning</strong>
               <span>NeurIPS 2025 (Poster)</span>
+              <span class="pub-links">
+                <a href="./assets/papers/nips25.jpeg" target="_blank" rel="noopener noreferrer">Image</a>
+              </span>
             </div>
           </li>
           <li class="pub-item">
-            <img src="./assets/papers/mlsys2025.jpg" alt="Preview image for MLSys 2025 paper" />
+            <div class="pub-thumb pdf-thumb" aria-hidden="true">PDF</div>
             <div>
-              <strong>MiLo: Efficient Quantized MoE Inference with Mixture of Low-Rank Compensators</strong>
+              <strong>
+                <a href="./assets/papers/mlsys25.pdf" target="_blank" rel="noopener noreferrer">
+                  MiLo: Efficient Quantized MoE Inference with Mixture of Low-Rank Compensators
+                </a>
+              </strong>
               <span>MLSys 2025</span>
+              <span class="pub-links">
+                <a href="./assets/papers/mlsys25.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </span>
             </div>
           </li>
         </ul>
@@ -106,7 +135,6 @@
 
       <section id="contact" class="section container">
         <h2>Contact</h2>
-        <p>If you are hiring for ML Systems or Applied ML roles, I would love to connect.</p>
         <ul class="contact-list">
           <li>Email: <a href="mailto:zelei2@illinois.edu">zelei2@illinois.edu</a></li>
           <li>GitHub: <a href="https://github.com/ZeleiShao">github.com/ZeleiShao</a></li>
