@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeleishao.github.io/zelei-personal-site/sitemap.xml
