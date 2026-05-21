@@ -211,14 +211,6 @@ h2 {
   background: #eef2ea;
 }
 
-.pdf-thumb {
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  color: var(--muted);
-  letter-spacing: 0.05em;
-}
-
 .pub-links {
   display: block;
   margin-top: 0.3rem;
