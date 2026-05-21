@@ -30,3 +30,18 @@ Open: `http://localhost:8080`
 - Replace `YOUR_LINKEDIN_HANDLE` in `index.html`.
 - Optional: add resume file at `assets/Zelei_Shao_Resume.pdf`.
 - Optional: update `og:url` in `<head>` after deployment URL is known.
+
+## Add profile photo
+
+- Put your headshot at: `assets/profile.jpg`
+- Recommended size: square image, at least `600x600`.
+
+## Add one image per paper
+
+1. Put each paper image into `assets/papers/`.
+2. Use a stable file naming scheme, e.g.:
+   - `assets/papers/mlsys2026.jpg`
+   - `assets/papers/icml2026.jpg`
+   - `assets/papers/neurips2025.jpg`
+3. In `index.html`, update each publication `<li class="pub-item">` image `src`.
+4. Recommended image ratio: around `3:2` (e.g. `900x600`) for clean cards.
