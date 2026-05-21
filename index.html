@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zelei Shao | ML Systems Portfolio</title>
+    <meta
+      name="description"
+      content="Zelei Shao personal website. MS student at UIUC focused on machine learning systems and deep learning."
+    />
+    <meta property="og:title" content="Zelei Shao | ML Systems Portfolio" />
+    <meta
+      property="og:description"
+      content="MS student at UIUC working on machine learning systems, deep learning, and efficient inference."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/zelei-personal-site/" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">ZS</a>
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <p class="eyebrow">Open to ML Systems / Applied ML roles</p>
+        <h1>Zelei Shao</h1>
+        <p class="lead">
+          MS student in Statistics at the University of Illinois Urbana-Champaign, building practical and
+          efficient machine learning systems.
+        </p>
+        <div class="cta-row">
+          <a class="button" href="#projects">View Projects</a>
+          <a class="button ghost" href="mailto:YOUR_EMAIL@illinois.edu">Email Me</a>
+          <a class="button ghost" href="./assets/Zelei_Shao_Resume.pdf">Resume</a>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <p>
+          I am currently an MS student in the Department of Statistics at UIUC (2024-2026). My current
+          interests focus on machine learning systems and deep learning, especially efficient inference for
+          large models.
+        </p>
+        <p>
+          I enjoy turning research ideas into robust implementations and benchmarking them with clear latency,
+          throughput, and quality trade-offs.
+        </p>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2>Selected Work</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Lookahead Reasoning for Speculative Decoding</h3>
+            <p>
+              Explored scaling speculative decoding with lookahead reasoning to improve generation efficiency
+              while preserving output quality.
+            </p>
+            <p class="meta">NeurIPS 2025 Poster</p>
+          </article>
+          <article class="card">
+            <h3>MiLo: Quantized MoE Inference</h3>
+            <p>
+              Co-authored work on efficient quantized MoE inference via mixture of low-rank compensators to
+              reduce cost and maintain performance.
+            </p>
+            <p class="meta">MLSys 2025</p>
+          </article>
+          <article class="card">
+            <h3>Production-Ready ML System (Add Your Project)</h3>
+            <p>
+              Replace this card with your strongest engineering project: include problem scope, your
+              contribution, and measurable result.
+            </p>
+            <p class="meta">Add metrics: latency / throughput / cost</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section container">
+        <h2>Publications</h2>
+        <ul class="publication-list">
+          <li>
+            <strong>Scaling Speculative Decoding with Lookahead Reasoning</strong>
+            <span>NeurIPS 2025 (Poster)</span>
+          </li>
+          <li>
+            <strong>MiLo: Efficient Quantized MoE Inference with Mixture of Low-Rank Compensators</strong>
+            <span>MLSys 2025</span>
+          </li>
+        </ul>
+        <p>
+          More details on
+          <a href="https://openreview.net/profile?id=~ZELEI_SHAO1">OpenReview profile</a>.
+        </p>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <p>If you are hiring for ML Systems or Applied ML roles, I would love to connect.</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:YOUR_EMAIL@illinois.edu">YOUR_EMAIL@illinois.edu</a></li>
+          <li>GitHub: <a href="https://github.com/YOUR_GITHUB_USERNAME">github.com/YOUR_GITHUB_USERNAME</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE/">YOUR_LINKEDIN_HANDLE</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Zelei Shao</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const siteNav = document.getElementById("site-nav");
+      menuToggle.addEventListener("click", () => {
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+        siteNav.classList.toggle("open");
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
