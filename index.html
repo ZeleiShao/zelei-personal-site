@@ -14,7 +14,7 @@
       content="MS student at UIUC working on machine learning systems, deep learning, and efficient inference."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/zelei-personal-site/" />
+    <meta property="og:url" content="https://github.com/ZeleiShao/zelei-personal-site/" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -26,7 +26,6 @@
         </button>
         <nav id="site-nav" class="site-nav">
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -43,13 +42,17 @@
               efficient machine learning systems.
             </p>
             <div class="cta-row">
-              <a class="button" href="#projects">View Projects</a>
-              <a class="button ghost" href="mailto:YOUR_EMAIL@illinois.edu">Email Me</a>
+              <a class="button" href="#publications">View Publications</a>
+              <a class="button ghost" href="mailto:zelei2@illinois.edu">Email Me</a>
               <a class="button ghost" href="./assets/Zelei_Shao_Resume.pdf">Resume</a>
             </div>
           </div>
           <div class="hero-photo-wrap">
-            <img class="hero-photo" src="./assets/profile.jpg" alt="Portrait of Zelei Shao" />
+            <picture>
+              <source srcset="./assets/profile.png" type="image/png" />
+              <source srcset="./assets/profile.jpeg" type="image/jpeg" />
+              <img class="hero-photo" src="./assets/profile.jpg" alt="Portrait of Zelei Shao" />
+            </picture>
           </div>
         </div>
       </section>
@@ -61,40 +64,6 @@
           interests focus on machine learning systems and deep learning, especially efficient inference for
           large models.
         </p>
-        <p>
-          I enjoy turning research ideas into robust implementations and benchmarking them with clear latency,
-          throughput, and quality trade-offs.
-        </p>
-      </section>
-
-      <section id="projects" class="section container">
-        <h2>Selected Work</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Lookahead Reasoning for Speculative Decoding</h3>
-            <p>
-              Explored scaling speculative decoding with lookahead reasoning to improve generation efficiency
-              while preserving output quality.
-            </p>
-            <p class="meta">NeurIPS 2025 Poster</p>
-          </article>
-          <article class="card">
-            <h3>MiLo: Quantized MoE Inference</h3>
-            <p>
-              Co-authored work on efficient quantized MoE inference via mixture of low-rank compensators to
-              reduce cost and maintain performance.
-            </p>
-            <p class="meta">MLSys 2025</p>
-          </article>
-          <article class="card">
-            <h3>Production-Ready ML System (Add Your Project)</h3>
-            <p>
-              Replace this card with your strongest engineering project: include problem scope, your
-              contribution, and measurable result.
-            </p>
-            <p class="meta">Add metrics: latency / throughput / cost</p>
-          </article>
-        </div>
       </section>
 
       <section id="publications" class="section container">
@@ -139,9 +108,9 @@
         <h2>Contact</h2>
         <p>If you are hiring for ML Systems or Applied ML roles, I would love to connect.</p>
         <ul class="contact-list">
-          <li>Email: <a href="mailto:YOUR_EMAIL@illinois.edu">YOUR_EMAIL@illinois.edu</a></li>
-          <li>GitHub: <a href="https://github.com/YOUR_GITHUB_USERNAME">github.com/YOUR_GITHUB_USERNAME</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE/">YOUR_LINKEDIN_HANDLE</a></li>
+          <li>Email: <a href="mailto:zelei2@illinois.edu">zelei2@illinois.edu</a></li>
+          <li>GitHub: <a href="https://github.com/ZeleiShao">github.com/ZeleiShao</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/zelei-shao-a8a4b7305/en">zelei-shao-a8a4b7305</a></li>
         </ul>
       </section>
     </main>
